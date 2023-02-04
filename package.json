@@ -38,5 +38,12 @@
     "vitest": "^0.25.6",
     "vue": "^3.2.47",
     "vue-tsc": "^1.0.12"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "eslint --ext .ts packages/*/**.ts", 
+      "eslint --ext .ts packages/*/**.ts --fix" 
+    ]
   }
+  
 }
