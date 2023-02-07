@@ -1,0 +1,16 @@
+@mixin set-button($bgc,$bc,$hbc,$hbgc,$abc,$abgc){
+    color:#fff;
+    background-color: $bgc;
+    border-color: $bc;
+      &:hover {
+        color: #fff;
+        border-color: $hbc;
+        background-color: $hbgc;
+      }
+      &:active {
+        color: #fff;
+        border-color: $abc;
+        background-color: $abgc;
+      }
+}
+

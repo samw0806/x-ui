@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
+const disable = ref(false);
+const handleChange = () => {
+  disable.value = disable.value ? false : true;
+};
 </script>
 
 <template>
-  111
-  <x-button></x-button>
+  <x-button :disabled="disable" type="info">111</x-button>
+  <button @click="handleChange">click</button>
 </template>
 
 <style scoped>

@@ -13,5 +13,8 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier', 'vue'],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    "vue/no-multiple-template-root":'off' 
   }
 }

@@ -1,0 +1,56 @@
+@use '_mixins.scss' as *;
+$b:'.x-button';
+#{$b} {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #ffffff;
+  color: #606266;
+  border: 1px solid #dcdfe6;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+
+  &:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+  }
+  &:active {
+    color: #178bff;
+    border-color: #c6e2ff;
+    background-color: #dbecff;
+  }
+}
+
+#{$b}-primary {
+    @include set-button(#409eff,#409eff,#66b1ff,#66b1ff,#4fa2fa,#4fa2fa)       
+}
+#{$b}-success {
+    @include set-button(#67c23a,#67c23a,#85ce61,#85ce61,#7dcd55,#7dcd55)       
+}
+#{$b}-info {
+    @include set-button(#909399,#909399,#a6a9ad,#a6a9ad,#9aa0a9,#9aa0a9)       
+}
+#{$b}-warn {
+    @include set-button(#e6a23c,#e6a23c,#ebb563,#ebb563,#eaad52,#eaad52)       
+}
+#{$b}-danger {
+    @include set-button(#f56c6c,#f56c6c,#f78989,#f78989,#f77a7a,#f77a7a)       
+}
+
+#{$b}.disabled {
+    cursor: no-drop;
+}
