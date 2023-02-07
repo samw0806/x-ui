@@ -1,12 +1,10 @@
-import { App } from 'vue'
+import { App } from "vue";
 
-import Button from './src/button.vue'
+import Button from "./src/button.vue";
 Button.install = function (app: App) {
   // 组件注册，按需引入
-  app.component(Button.name, Button)
-  return app
-}
+  app.component(Button.name, Button);
+  return app;
+};
 
-export default Button
-
-
+export default Button;
